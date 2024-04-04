@@ -30,14 +30,13 @@
                           <div class="form-group">
                             <h5>User Rol <span class="text-danger">*</span></h5>
                             <div class="controls">
-                              <select name="suertype" id="suertype" required=""
-                                class="form-control">
+                              <select name="role" required="" class="form-control">
                                 <option value="" selected="" disabled>Select Role</option>
                                 <option value="Admin"
-                                  {{ $editData->suertype == 'Admin' ? 'selected' : '' }}>Admin
+                                  {{ $editData->role == 'Admin' ? 'selected' : '' }}>Admin
                                 </option>
-                                <option value="User"
-                                  {{ $editData->suertype == 'User' ? 'selected' : '' }}>User
+                                <option value="Operator"
+                                  {{ $editData->role == 'Operator' ? 'selected' : '' }}>Operator
                                 </option>
 
                               </select>

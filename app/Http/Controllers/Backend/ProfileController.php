@@ -52,7 +52,7 @@ class ProfileController extends Controller
         }
         $data->save();
         $notification = array(
-            'message' => 'Profile utilisateur mis à jour avec  succès',
+            'message' => 'User Profil Inserted successfully',
             'alert-type' => 'success'
         );
         return redirect()->route('profile.view')->with($notification);
@@ -85,7 +85,7 @@ class ProfileController extends Controller
             Auth::logout();
             return redirect()->route('login');
 
-        }else {
+        } else {
             return redirect()->back();
 
 

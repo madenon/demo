@@ -24,11 +24,9 @@
 
                       {{-- row --}}
 
-
                       <div class="row">
 
                         <div class="col-md-6">
-
 
                           <div class="form-group">
                             <h5>User Mobile <span class="text-danger">*</span></h5>
@@ -94,10 +92,10 @@
                                 class="form-control">
                                 <option value="" selected="" disabled>Select Gender</option>
                                 <option value="Male"
-                                  {{ $editData->gender == 'Mal' ? 'selected' : '' }}>Mal
+                                  {{ $editData->gender == 'Male' ? 'selected' : '' }}>Male
                                 </option>
-                                <option value="Femal"
-                                  {{ $editData->gender == 'Femal' ? 'selected' : '' }}>Femal
+                                <option value="Female"
+                                  {{ $editData->gender == 'Female' ? 'selected' : '' }}>Female
                                 </option>
 
                               </select>
